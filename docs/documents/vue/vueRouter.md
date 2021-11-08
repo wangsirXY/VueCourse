@@ -871,7 +871,7 @@ Vue.use(Field);
 
 3. 引入提前准备好的 css 样式，实现样式初始化和适配问题。
 
-   > css文件：<a href="./assets/file/netcaseMusic.style.zip">netcaseMusic.style.zip</a> 
+   > css文件：<a href="http://wangsir.info/downFile/netcaseMusic.style.zip" download="http://wangsir.info/downFile/netcaseMusic.style.zip">netcaseMusic.style.zip</a> 
 
    ```js
    import '@style/reset.css'
