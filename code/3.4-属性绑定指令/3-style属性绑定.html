@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style属性绑定</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="bind-style">
+    <span :style="[baseStyles, overridingStyles]">
+      Hover your mouse over me for a few seconds to see my dynamically bound
+      title!
+    </span>
+  </div>
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          message: 'You loaded this page on ' + new Date().toLocaleString(),
+          baseStyles: {
+            fontSize: '20px',
+            color: 'red'
+          },
+          overridingStyles: {
+            borderRadius:'10px',
+            border: '1px solid red',
+            padding: '5px'
+          }
+        }
+      }
+    });
+    vm.mount('#bind-style');
+  </script>
+</body>
+
+</html>

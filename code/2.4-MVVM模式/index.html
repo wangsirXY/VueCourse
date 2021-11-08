@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <button v-if="showBtn" v-on:click="handleClick">Click Me</button>
+  </div>
+
+  <script>
+    const vm = Vue.createApp({
+      // data 对象就是要渲染到页面上的数据
+      data() {
+        return {
+          showBtn: 'true'
+        }
+      },
+      methods: {
+        handleClick(){
+          console.log('你终于点中了我...');
+        }
+      }
+    });
+    // 通过vm(view model)把 username渲染到id为app的元素中
+    vm.mount('#app');
+  </script>
+</body>
+</html>

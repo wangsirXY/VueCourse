@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class属性绑定</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+  <style>
+    h1.normal {
+      width: 500px;
+      height: 100px;
+      font-size: 50px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 100px;
+      border: 1px solid red;
+    }
+
+    h1.active {
+      background-color: red;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bind-class">
+    <h1 :class="[{ active: flag}, noramlClass]">Hello Class</h1>
+  </div>
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          noramlClass: 'normal',
+          activeClass: 'active',
+          flag: true
+        }
+      }
+    });
+    vm.mount('#bind-class');
+  </script>
+</body>
+
+</html>

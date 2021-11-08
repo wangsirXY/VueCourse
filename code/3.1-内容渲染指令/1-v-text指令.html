@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 正常数据 -->
+    <p v-text="username"></p>
+    <!-- p标签中存在内容 -->
+    <p v-text="gender">性别</p>
+    <!-- 含有html标签的数据 -->
+    <div v-text="book"></div>
+  </div>
+
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          // 正常数据
+          username: '法外狂徒',
+          // p标签中存在内容
+          gender: '男',
+          // 含有html标签的数据
+          book: '<h2>理想国</h2>'
+        }
+      }
+    });
+    vm.mount('#app');
+  </script>
+</body>
+
+</html>

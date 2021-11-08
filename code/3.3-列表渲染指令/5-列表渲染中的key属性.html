@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <li v-for="(item,index) in todos" @click="delOne(item.id)" id="item.id">
+      {{index}}-{{ item.name }}
+    </li>
+  </div>
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {
+          todos: [
+            { id: 1, name: '喜羊羊', isComplete: false },
+            { id: 2, name: '美羊羊', isComplete: false },
+            { id: 3, name: '懒洋洋', isComplete: false }
+          ],
+        }
+      },
+      methods: {
+        delOne(id){
+          this.todos = this.todos.filter(item => item.id !== id)
+        }
+      }
+    });
+    vm.mount('#app');
+  </script>
+</body>
+
+</html>

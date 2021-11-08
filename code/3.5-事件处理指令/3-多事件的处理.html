@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多事件的处理</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <button @click="fnOne(2), fnTwo(4)">点我看效果</button>
+  </div>
+  <script>
+    const vm = Vue.createApp({
+      data() {
+        return {}
+      },
+      methods: {
+        fnOne(num) {
+          console.log(num) 
+        },
+        fnTwo(num) {
+          console.log(num)
+        }
+      }
+    });
+    vm.mount('#app');
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="range" >
+      <span v-for="n in 10">{{ n }} </span>
+    </div>
+  </div>
+  <script>
+    const vm = Vue.createApp({});
+    vm.mount('#app');
+  </script>
+</body>
+
+</html>
