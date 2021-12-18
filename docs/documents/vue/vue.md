@@ -16,7 +16,7 @@
 
 ## Vue 调试插件
 
-Chrome插件：<a href="http://wangsir.info/downFile/Chrome_Vue.js devtools.zip" download="http://wangsir.info/downFile/Chrome_Vue.js devtools.zip">Vue.js devtools</a>
+Chrome插件：[Vue.js devtools](./assets/file/Chrome_Vue.js devtools.zip) 
 
 
 
@@ -1964,7 +1964,7 @@ this.$emit("", 参数1, 参数2);
 
 ### 案例：Todo 备忘录
 
-<a href="http://wangsir.info/downFile/case/Vue-todo案例.zip" download="http://wangsir.info/downFile/case/Vue-todo案例.zip">Todo案例完成参考.zip</a> 
+[Todo案例完成参考.zip](./assets/file/case/Vue-todo案例.zip) 
 
 1. 创建工程和组件
 
@@ -3544,5 +3544,4 @@ export default {
 }
 </script>
 ```
-
 
