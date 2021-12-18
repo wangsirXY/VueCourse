@@ -41,61 +41,15 @@ export default {
       },
       {
         text: '我的技术栈',
-        activeMatch: '^/config/',
-        items: [
-          {
-            text: 'Html & CSS',
-            link: 'https://wangsirxy.github.io/HtmlCssCourse/',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'JavaScript',
-            link: 'https://wangsirxy.github.io/javaScriptCourse/',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'JavaScript高级',
-            link: 'https://wangsirxy.github.io/javaScriptAdvancedCourse/',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'jQuery',
-            link: 'https://wangsirxy.github.io/jQueryCourse/',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'Node.js',
-            link: 'https://WangSirXY.github.io/nodejsCourse',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'Ajax',
-            link: 'https://WangSirXY.github.io/ajaxCourse',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'Git',
-            link: 'https://WangSirXY.github.io/gitCourse',
-            activeMatch: '^/config/',
-          },
-          {
-            text: '移动Web & Webpack',
-            link: 'https://WangSirXY.github.io/mobileWebCourse',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'Vue',
-            link: '/documents/vue/vue',
-            activeMatch: '^/config/',
-          },
-        ]
+        link: 'http://wangsir.info/blog.html',
+        activeMatch: '^/config/'
       },
       {
         text: '友情链接',
         activeMatch: '^/config/',
         items: [
           {
-            text: 'GuAn',
+            text: '本站作者：GuAn',
             link: 'http://wangsir.info/',
             activeMatch: '^/config/',
           },
@@ -106,7 +60,7 @@ export default {
           }
         ]
       },
-      { text: 'GitHub', link: 'https://github.com/wangsirXY/', activeMatch: '^/$|^/guide/' },
+      { text: 'GitHub', link: 'https://github.com/', activeMatch: '^/$|^/guide/' },
     ],
     sidebar: {
       '/': getGuideSidebar()
